@@ -1,7 +1,7 @@
-import familyWithDog1 from "../../assets/family_with_dog1.jpg"
-import familyWithDog2 from "../../assets/family_with_dog2.jpg"
-import familyWithCat1 from "../../assets/family_with_cat1.jpg"
-import familyWithCat2 from "../../assets/family_with_cat2.jpg"
+import familyWithDog1 from "../../assets/family_with_dog1.webp"
+import familyWithDog2 from "../../assets/family_with_dog2.webp"
+import familyWithCat1 from "../../assets/family_with_cat1.webp"
+import familyWithCat2 from "../../assets/family_with_cat2.webp"
 
 const reviews = [
     {

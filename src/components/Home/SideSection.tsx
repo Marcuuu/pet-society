@@ -1,4 +1,4 @@
-import portraitCat from "../../assets/portrait_cat.jpg"
+import portraitCat from "../../assets/portrait_cat.webp"
 
 export const SideSection = () => {
     return (
@@ -15,13 +15,13 @@ export const SideSection = () => {
                 </div>
                 <div className="flex flex-col justify-center gap-6 px-6 py-16 md:px-16 lg:px-24">
                     <h2 className="text-secondary-dark">
-                        Every pet remembers who gave them a second chance.
+                        Every pet remembers who gave them a second chance
                     </h2>
                     <p className="text-lg text-text-muted">
                         Behind every wagging tail and quiet purr is a story of
                         waiting, hoping, and finally being chosen. When you
                         adopt, you're not just bringing home a pet, you're
-                        giving them the family they always deserved.
+                        giving them the family they always deserved
                     </p>
                     <a href="/adopt" className="btn btn-primary w-fit">
                         Change a life today

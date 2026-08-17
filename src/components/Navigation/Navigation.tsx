@@ -1,4 +1,24 @@
 import { useEffect, useRef, useState } from "react"
+import { NavLink } from "react-router-dom"
+
+const routes = [
+    {
+        url: "/",
+        name: "Home",
+    },
+    {
+        url: "/adopt",
+        name: "Adopt",
+    },
+    {
+        url: "/services",
+        name: "Services",
+    },
+    {
+        url: "/about",
+        name: "About",
+    },
+]
 
 export const Navigation = () => {
     const [isScrolled, setIsScrolled] = useState(false)
@@ -81,18 +101,19 @@ export const Navigation = () => {
                     </span>
                 </h3>
                 <ul className="flex justify-center gap-6">
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
-                    <li>
-                        <a href="/adopt">Adopt</a>
-                    </li>
-                    <li>
-                        <a href="/services">Services</a>
-                    </li>
-                    <li>
-                        <a href="/about">About</a>
-                    </li>
+                    {routes.map((route) => (
+                        <li key={route.name}>
+                            <NavLink
+                                to={route.url}
+                                end={route.url === "/"}
+                                className={({ isActive }) =>
+                                    !isActive ? "text-black!" : ""
+                                }
+                            >
+                                {route.name}
+                            </NavLink>
+                        </li>
+                    ))}
                 </ul>
                 <a href="/login" className="btn btn-secondary justify-self-end">
                     Log In

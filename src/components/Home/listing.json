@@ -8,7 +8,7 @@
         "gender": "Male",
         "size": "Large",
         "location": "Toa Payoh",
-        "image": "golden_retriever.jpg",
+        "image": "golden_retriever.webp",
         "description": "Friendly and energetic, loves playing fetch and long walks"
     },
     {
@@ -20,7 +20,7 @@
         "gender": "Female",
         "size": "Medium",
         "location": "Pasir Ris",
-        "image": "border_collie.jpg",
+        "image": "border_collie.webp",
         "description": "Smart and eager to please, great with kids and other pets"
     },
     {
@@ -32,7 +32,7 @@
         "gender": "Female",
         "size": "Small",
         "location": "Kallang",
-        "image": "domestic_shorthair.jpg",
+        "image": "domestic_shorthair.webp",
         "description": "Calm and affectionate, enjoys sunny windowsills and quiet naps"
     },
     {
@@ -44,7 +44,7 @@
         "gender": "Male",
         "size": "Medium",
         "location": "Boon Lay",
-        "image": "staffordshire_terrier.jpg",
+        "image": "staffordshire_terrier.webp",
         "description": "Loyal and gentle giant, would love a home with a yard to run in"
     },
     {
@@ -56,7 +56,7 @@
         "gender": "Male",
         "size": "Small",
         "location": "Punggol",
-        "image": "british_shorthair.jpg",
+        "image": "british_shorthair.webp",
         "description": "Playful kitten who loves toys and curling up for cuddles"
     },
     {
@@ -68,7 +68,7 @@
         "gender": "Female",
         "size": "Medium",
         "location": "Bishan",
-        "image": "beagle.jpg",
+        "image": "beagle.webp",
         "description": "Sweet-natured senior girl looking for a relaxed forever home"
     },
     {
@@ -80,7 +80,7 @@
         "gender": "Male",
         "size": "Large",
         "location": "Bedok",
-        "image": "labrador_retriever.jpg",
+        "image": "labrador_retriever.webp",
         "description": "Goofy and affectionate, gets along great with everyone he meets"
     },
     {
@@ -92,7 +92,7 @@
         "gender": "Female",
         "size": "Medium",
         "location": "Hougang",
-        "image": "ragdoll.jpg",
+        "image": "ragdoll.webp",
         "description": "Gentle and floppy, loves being carried around like a baby"
     },
     {
@@ -104,7 +104,7 @@
         "gender": "Male",
         "size": "Large",
         "location": "Pioneer",
-        "image": "maine_coon.jpg",
+        "image": "maine_coon.webp",
         "description": "Big, fluffy, and laid-back, a gentle giant of the cat world"
     },
     {
@@ -116,7 +116,7 @@
         "gender": "Male",
         "size": "Large",
         "location": "King Albert Park",
-        "image": "german_shepherd.jpg",
+        "image": "german_shepherd.webp",
         "description": "Confident and protective, well trained and ready for an active home"
     },
     {
@@ -128,7 +128,7 @@
         "gender": "Female",
         "size": "Small",
         "location": "Simei",
-        "image": "siamese.jpg",
+        "image": "siamese.webp",
         "description": "Vocal and curious, always the first to greet you at the door"
     },
     {
@@ -140,7 +140,7 @@
         "gender": "Male",
         "size": "Small",
         "location": "Bukit Batok",
-        "image": "cavalier_king_charles_spaniel.jpg",
+        "image": "cavalier_king_charles_special.webp",
         "description": "A calm cuddle-bug who is happiest curled up on the couch"
     },
     {
@@ -152,7 +152,7 @@
         "gender": "Male",
         "size": "Medium",
         "location": "Woodlands",
-        "image": "abyssinian.jpg",
+        "image": "abyssinian.webp",
         "description": "Energetic and playful, needs plenty of toys and climbing space"
     },
     {
@@ -164,7 +164,7 @@
         "gender": "Male",
         "size": "Large",
         "location": "Yishun",
-        "image": "boxer.jpg",
+        "image": "boxer.webp",
         "description": "Bouncy and affectionate, thrives on playtime and belly rubs"
     },
     {
@@ -176,7 +176,7 @@
         "gender": "Female",
         "size": "Small",
         "location": "Canberra",
-        "image": "russian_blue.jpg",
+        "image": "russian_blue.webp",
         "description": "Quiet and reserved at first, but deeply loyal once she trusts you"
     },
     {
@@ -188,7 +188,7 @@
         "gender": "Male",
         "size": "Large",
         "location": "Serangoon",
-        "image": "newfoundland.jpg",
+        "image": "newfoundland.webp",
         "description": "A gentle, patient giant who adores children and water play"
     },
     {
@@ -200,7 +200,7 @@
         "gender": "Male",
         "size": "Small",
         "location": "Tampines",
-        "image": "bombay.jpg",
+        "image": "bombay.webp",
         "description": "A sleek black kitten with a big personality and boundless energy"
     },
     {
@@ -212,7 +212,7 @@
         "gender": "Female",
         "size": "Medium",
         "location": "Tanah Merah",
-        "image": "cocker_spaniel.jpg",
+        "image": "cocker_spaniel.webp",
         "description": "Sweet and gentle, enjoys quiet walks and lounging in the sun"
     }
 ]

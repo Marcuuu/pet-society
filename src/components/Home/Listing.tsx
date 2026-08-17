@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react"
 import listingData from "./listing.json"
-import dog1Image from "../../assets/dog1.jpg"
+import dog1Image from "../../assets/dog1.webp"
 
 const assetImages = import.meta.glob("../../assets/*.{jpg,jpeg,png,webp}", {
     eager: true,
@@ -15,7 +15,6 @@ for (const path in assetImages) {
 
 const resolvePetImage = (filename: string) =>
     imagesByFilename[filename] ?? dog1Image
-
 interface Pet {
     id: number
     name: string
@@ -71,7 +70,7 @@ export const Listing = ({
             {filteredListings.map((pet) => (
                 <li
                     key={pet.id}
-                    className="group overflow-hidden rounded-2xl border border-border bg-white shadow-sm transition-shadow duration-300 hover:shadow-lg"
+                    className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-white shadow-sm transition-shadow duration-300 hover:shadow-lg"
                 >
                     <div className="relative aspect-[4/3] overflow-hidden">
                         <img
@@ -85,7 +84,7 @@ export const Listing = ({
                             {pet.type}
                         </span>
                     </div>
-                    <div className="flex flex-col gap-2 p-5">
+                    <div className="flex flex-1 flex-col gap-2 p-5">
                         <div className="flex items-baseline justify-between">
                             <h4 className="text-secondary-dark">{pet.name}</h4>
                             <span className="text-sm text-text-muted">
@@ -98,7 +97,7 @@ export const Listing = ({
                         <p className="text-sm text-text-muted">
                             {pet.description}
                         </p>
-                        <div className="mt-2 flex flex-wrap gap-2 text-xs text-text-muted">
+                        <div className="mt-2 flex flex-wrap gap-2 text-xs text-text-muted mb-4">
                             <span className="rounded-full bg-bg px-3 py-1">
                                 {pet.gender}
                             </span>
@@ -111,7 +110,7 @@ export const Listing = ({
                         </div>
                         <a
                             href={`/adopt/${pet.id}`}
-                            className="btn btn-secondary btn-sm mt-3 w-full"
+                            className="btn btn-secondary btn-sm mt-auto w-full"
                         >
                             Meet {pet.name}
                         </a>
