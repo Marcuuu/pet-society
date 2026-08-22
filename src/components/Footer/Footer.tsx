@@ -1,6 +1,10 @@
+import { Link } from "react-router-dom"
+
 const exploreLinks = [
     { href: "/", label: "Home" },
     { href: "/adopt", label: "Adopt" },
+    { href: "/pet-care", label: "Pet Care" },
+    { href: "/release-a-pet", label: "Release" },
     { href: "/services", label: "Services" },
     { href: "/about", label: "About" },
 ]
@@ -95,7 +99,7 @@ export const Footer = () => {
                     <ul className="flex flex-col gap-2 text-sm">
                         {exploreLinks.map((link) => (
                             <li key={link.href}>
-                                <a href={link.href}>{link.label}</a>
+                                <Link to={link.href}>{link.label}</Link>
                             </li>
                         ))}
                     </ul>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import heroImage from "../../assets/hero.webp"
 
 export const HeroBanner = () => {
@@ -17,9 +18,9 @@ export const HeroBanner = () => {
                     Find your perfect companion, meet them in person, and give
                     them the love they have always dream of
                 </p>
-                <a href="/adopt" className="btn btn-primary btn-lg mt-6">
+                <Link to="/adopt" className="btn btn-primary btn-lg mt-6">
                     Find your pet
-                </a>
+                </Link>
             </div>
         </div>
     )

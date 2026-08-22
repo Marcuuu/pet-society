@@ -1,3 +1,4 @@
+import { SectionHeading } from "@/components/ui/SectionHeading"
 import familyWithDog1 from "../../assets/family_with_dog1.webp"
 import familyWithDog2 from "../../assets/family_with_dog2.webp"
 import familyWithCat1 from "../../assets/family_with_cat1.webp"
@@ -49,13 +50,10 @@ const StarRating = () => (
 export const Reviews = () => {
     return (
         <section className="pt-32">
-            <div className="mx-auto max-w-2xl text-center">
-                <h2>Happy Tails</h2>
-                <p className="mt-4 text-lg text-text-muted">
-                    Stories from families who found their new best friend with
-                    us.
-                </p>
-            </div>
+            <SectionHeading
+                title="Happy Tails"
+                subtitle="Stories from families who found their new best friend with us."
+            />
 
             <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
                 {reviews.map((review) => (

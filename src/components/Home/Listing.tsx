@@ -1,32 +1,6 @@
-import { useMemo, useState } from "react"
-import listingData from "./listing.json"
-import dog1Image from "../../assets/dog1.webp"
-
-const assetImages = import.meta.glob("../../assets/*.{jpg,jpeg,png,webp}", {
-    eager: true,
-    import: "default",
-}) as Record<string, string>
-
-const imagesByFilename: Record<string, string> = {}
-for (const path in assetImages) {
-    const filename = path.split("/").pop()
-    if (filename) imagesByFilename[filename] = assetImages[path]
-}
-
-const resolvePetImage = (filename: string) =>
-    imagesByFilename[filename] ?? dog1Image
-interface Pet {
-    id: number
-    name: string
-    type: string
-    breed: string
-    age: string
-    gender: string
-    size: string
-    location: string
-    image: string
-    description: string
-}
+import { useMemo } from "react"
+import { Link } from "react-router-dom"
+import { pets, resolvePetImage } from "@/lib/pets"
 
 interface ListingProps {
     limit?: number
@@ -39,12 +13,10 @@ export const Listing = ({
     searchQuery,
     selectedType,
 }: ListingProps) => {
-    const [listings] = useState<Pet[]>(listingData as Pet[])
-
     const filteredListings = useMemo(() => {
         const query = searchQuery.toLowerCase()
 
-        return listings
+        return pets
             .filter((pet) => {
                 const matchesSearchQuery =
                     pet.name.toLowerCase().includes(query) ||
@@ -55,7 +27,7 @@ export const Listing = ({
                 return matchesSearchQuery && matchesSelectedType
             })
             .slice(0, limit)
-    }, [listings, searchQuery, selectedType, limit])
+    }, [searchQuery, selectedType, limit])
 
     if (filteredListings.length === 0) {
         return (
@@ -73,13 +45,15 @@ export const Listing = ({
                     className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-white shadow-sm transition-shadow duration-300 hover:shadow-lg"
                 >
                     <div className="relative aspect-[4/3] overflow-hidden">
-                        <img
-                            src={resolvePetImage(pet.image)}
-                            alt={pet.name}
-                            loading="lazy"
-                            decoding="async"
-                            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                        />
+                        <Link to={`/adopt/${pet.id}`}>
+                            <img
+                                src={resolvePetImage(pet.image)}
+                                alt={pet.name}
+                                loading="lazy"
+                                decoding="async"
+                                className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            />
+                        </Link>
                         <span className="absolute top-3 left-3 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-secondary-dark capitalize">
                             {pet.type}
                         </span>
@@ -108,12 +82,12 @@ export const Listing = ({
                                 {pet.location}
                             </span>
                         </div>
-                        <a
-                            href={`/adopt/${pet.id}`}
+                        <Link
+                            to={`/adopt/${pet.id}`}
                             className="btn btn-secondary btn-sm mt-auto w-full"
                         >
                             Meet {pet.name}
-                        </a>
+                        </Link>
                     </div>
                 </li>
             ))}

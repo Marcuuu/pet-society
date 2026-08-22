@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import portraitCat from "../../assets/portrait_cat.webp"
 
 export const SideSection = () => {
@@ -23,9 +24,9 @@ export const SideSection = () => {
                         adopt, you're not just bringing home a pet, you're
                         giving them the family they always deserved
                     </p>
-                    <a href="/adopt" className="btn btn-primary w-fit">
+                    <Link to="/adopt" className="btn btn-primary w-fit">
                         Change a life today
-                    </a>
+                    </Link>
                 </div>
             </div>
         </section>
